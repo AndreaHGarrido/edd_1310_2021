@@ -24,10 +24,10 @@ def half_stack(mitad):
                 pila.push(pila_2.pop())
             print("\nResultado:")
             return pila.to_string()
-    elif pila.lenght()==0:  #Si la longitud de la pila es igual a 0
+    elif pila.lenght()==0:  
         print("La pila esta vacia, inserte elementos.")
 
-def half(size): #La función encuentra la mitad del tamaño de la pila
+def half(size): 
     mitad = int(pila.lenght()/2)
     residuo = pila.lenght()%2
     if residuo == 0:
@@ -45,8 +45,8 @@ def main2():
     pila.push(7)
     pila.to_string()
     print(f"Hay {pila.lenght()} elementos .  ")
-    size = pila.lenght() #Es el tamaño de la pila
-    mitad = half(size) #Regresa cuál es la posición media en la pila
+    size = pila.lenght() 
+    mitad = half(size) 
     half_stack(mitad)
 
 main()
